@@ -28,7 +28,8 @@ eureka:
     status-page-url-path: "/admin/info"
 
 # config first
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: "http://localhost:9010/eureka"
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:9010/eureka"
