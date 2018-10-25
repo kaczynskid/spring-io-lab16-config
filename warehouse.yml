@@ -1,5 +1,9 @@
 server:
-  port: 9100
+  port: 0 #9100
+
+#management:
+#  server:
+#    port: 0 #"1${server.port}"
 
 spring:
   datasource:

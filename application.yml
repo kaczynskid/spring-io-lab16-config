@@ -4,8 +4,8 @@ some:
   property: common value
 
 management:
-  server:
-    port: "1${server.port}"
+#  server:
+#    port: "1${server.port}"
   endpoints:
     web:
       base-path: "/admin"
