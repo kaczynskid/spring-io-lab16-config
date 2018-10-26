@@ -23,4 +23,11 @@ spring:
           destination: "item-stock-update"
           content-type: "application/json"
           group: "warehouse"
-          durableSubscribtion: true
+      rabbit:
+        bindings:
+          stockUpdate:
+            consumer:
+              durableSubscribtion: true
+              autoBindDlq: true
+              requeueRejected: true
+              republishToDlq: true
