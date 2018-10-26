@@ -13,3 +13,13 @@ spring:
 uri:
   customizer:
     enabled: false
+
+---
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        checkoutItem:
+          destination: "item-stock-update"
+          content-type: "application/json"
