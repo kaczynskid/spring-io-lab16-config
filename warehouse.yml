@@ -13,3 +13,14 @@ spring:
   jpa:
     hibernate:
       ddl-auto: "none"
+
+---
+spring:
+  cloud:
+    stream:
+      bindings:
+        stockUpdate:
+          destination: "item-stock-update"
+          content-type: "application/json"
+          group: "warehouse"
+          durableSubscribtion: true
