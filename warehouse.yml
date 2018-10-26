@@ -20,8 +20,6 @@ spring:
     stream:
       bindings:
         stockUpdate:
-          destination: "item-stock-update"
-          content-type: "application/json"
           group: "warehouse"
       rabbit:
         bindings:
